@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>آزمایشگاه دکتر مهندس فضانورد مبین محمدی</title>
+  <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../node_modules/eventemitter3/index.js"></script>
+  <script src="js/modules/ui.js"></script>
+  <script src="js/modules/form.js"></script>
+  <script src="js/modules/interpret.js"></script>
+  <script src="js/app.js"></script>
+</head>
+<body>
+  <section id="form-section">
+    <div class="container">
+      <div class="title-section">
+        <img src="images/lungs.svg" alt="lungs icon image">
+        <h1>آزمایشگاه دکتر مهندس فضانورد مبین محمدی</h1>
+      </div>
+
+      <form class="clearfix">
+        <span class="error-msg">لطفا در فیلد ها فقط عدد انگلیسی وارد کنید!</span>
+        <div class="clearfix">
+          <label for="ph">pH</label>
+          <input type="text" name="ph" id="ph" placeholder="Enter ph here..." required minlength=1 maxlength=4>
+        </div>
+        <div class="clearfix">
+          <label for="co2">PaCO<sub>2</sub></label>
+          <input type="text" name="co2" id="co2" placeholder="Enter Co2 here..." required minlength=1 maxlength=4>
+        </div>
+        <div class="clearfix">
+          <label for="bicarb">HCO<sub>3</sub></label>
+          <input type="text" name="bicarb" id="bicarb" placeholder="Enter bicarb here..." required minlength=1 maxlength=4>
+        </div>
+        <div class="clearfix btn-container">
+          <input type="submit" value="Analyze">
+          <input type="reset" value="Clear">
+        </div>
+      </form>
+
+      <div id="interpret-result">
+        <h2>Interpretation:</h2>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "vbg",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "serve": "browser-sync start --server --files 'css/styles.css, js/**/*.js,  *.html'"
+  },
+  "author": "Mobin Mohammadi",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "eventemitter3": "^4.0.7",
+    "jquery": "^3.6.0"
+  }
+}
