@@ -18,9 +18,9 @@ var Interpret = (function() {
       },
 
       co2: {
-        low: (co2 < 30),
-        normal: (co2 >= 30 && co2 <= 40),
-        high: (co2 > 40)
+        low: (co2 < 41),
+        normal: (co2 >= 41 && co2 <= 51),
+        high: (co2 > 51)
       }
 
     };
